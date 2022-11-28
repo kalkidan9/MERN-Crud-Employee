@@ -14,7 +14,8 @@ const schema = new mongoose.Schema({
     require: true,
   },
   gender: {
-    type: Boolean,
+    type: String,
+    enum:"Male" || "Female", 
     require: true,
   },
 });
