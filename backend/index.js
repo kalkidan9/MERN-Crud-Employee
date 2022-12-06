@@ -14,7 +14,7 @@ databaseConnection();
 app.use(exppress.json());
 
 //API
-app.use("./api/employee", employeeRoutes);
+app.use("/employee", employeeRoutes);
 //port
 app.listen(port, () => {
   console.log("Server is connected at port " + port);
